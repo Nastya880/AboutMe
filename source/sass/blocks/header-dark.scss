@@ -1,0 +1,8 @@
+body.dark .header,
+body.dark .header__nav {
+  background-color: $color-tolopea;
+
+  @include vp-768 {
+    background-color: none;
+  }
+}

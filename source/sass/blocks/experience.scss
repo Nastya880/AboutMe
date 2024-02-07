@@ -1,0 +1,74 @@
+.experience__container {
+  padding: 40px 30px;
+  background-color: rgba($color-default-white, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+
+.experience h2 {
+  @include font("Minecraft", 600, 35px, $color-tolopea, 60px);
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+
+  @include vp-768 {
+    font-size: 45px;
+  }
+
+  @include vp-1024 {
+    font-size: 50px;
+  }
+}
+
+.experience h3 {
+  @include font(sans-serif, 600, 25px, $color-tolopea, 30px);
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+
+  @include vp-768 {
+    font-size: 30px;
+  }
+}
+
+.experience p {
+  @include font(sans-serif, 400, 19px, ($color-tolopea,  0.8), 22px);
+  letter-spacing: 1px;
+
+  @include vp-768 {
+    font-size: 30px;
+    line-height: 28px;
+  }
+}
+
+.experience__wrapper {
+  position: relative;
+}
+
+.experience__item-date {
+  position: relative;
+}
+
+.experience__item-date::before {
+  content: "";
+  position: absolute;
+  background-color: $color-deep-magenta;
+  left: -24px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.experience__list {
+  margin-left: 20px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.experience__item {
+  margin: 50px 0;
+}

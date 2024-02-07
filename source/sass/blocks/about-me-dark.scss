@@ -1,0 +1,18 @@
+body.dark .about-me h1 {
+  color: $color-default-white;
+}
+
+body.dark .about-me h2,
+body.dark .about-me a {
+  color: $color-default-white;
+}
+
+body.dark .about-me p {
+  color: $color-default-white;
+}
+
+body.dark .about-me {
+  background-color: $color-tolopea;
+  transition: .3s all ease;
+}
+

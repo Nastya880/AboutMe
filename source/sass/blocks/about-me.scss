@@ -1,0 +1,100 @@
+.about-me__container {
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: rgba($color-default-white, 0.3);
+  align-items: center;
+  justify-items: center;
+  gap: 20px;
+
+  @include vp-1024 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include vp-1440 {
+  }
+}
+
+.about-me img {
+  width: 100%;
+  border-radius: 50%;
+  height: auto;
+
+  @include vp-1440 {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.about-me__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // max-width: 50%;
+  align-self: center;
+  border: 6px dashed $color-deep-magenta;
+
+  @include vp-1440 {
+    text-align: center;
+  }
+}
+
+.about-me__description h1 {
+  @include font("Minecraft", 600, 35px, $color-tolopea, 60px);
+  text-align: center;
+  letter-spacing: 1px;
+
+  @include vp-768 {
+    font-size: 45px;
+  }
+
+  @include vp-1024 {
+    font-size: 50px;
+  }
+}
+
+.about-me__description h2 {
+  @include font(sans-serif, 600, 25px, rgba($color-tolopea, 0.8), 30px);
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include vp-768 {
+    font-size: 30px;
+  }
+}
+
+.about-me__description p {
+  @include font(sans-serif, 400, 19px, rgba($color-tolopea, 0.8), 22px);
+  letter-spacing: 1px;
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+
+  @include vp-768 {
+    font-size: 30px;
+    line-height: 28px;
+  }
+}
+
+.about-me__contacts-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  @include vp-1024 {
+    justify-content: space-between;
+  }
+}
+
+.about-me__contacts-item {
+  margin-bottom: 10px;
+}
+
+.about-me__contacts-item a {
+  text-decoration: none;
+  margin-right: 20px;
+}

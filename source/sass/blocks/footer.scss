@@ -1,0 +1,41 @@
+.footer__container {
+  padding: 40px 20px;
+  background-color: $color-default-white;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+
+  @include vp-768 {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.footer__nav-item {
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+
+.footer__nav-item-link {
+  @include font("Minecraft", 400, 20px, $color-tolopea, 20px);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: .3s;
+
+  &:hover {
+    color: $color-grey-suit;
+  }
+
+  @include vp-1024 {
+    position: relative;
+  }
+}
+

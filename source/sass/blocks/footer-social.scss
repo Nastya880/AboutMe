@@ -1,0 +1,12 @@
+.footer__social-list {
+  list-style: none;
+  display: flex;
+
+  @include vp-1024 {
+    justify-content: space-between;
+  }
+}
+
+.footer__social-item {
+  margin-right: 10px;
+}

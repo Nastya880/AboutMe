@@ -1,0 +1,130 @@
+.education__container {
+  padding: 40px 20px;
+  background-color: rgba($color-default-white, 0.2);
+}
+
+.education h2 {
+  @include font("Minecraft", 600, 35px, $color-tolopea, 60px);
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+
+  @include vp-768 {
+    font-size: 45px;
+  }
+
+  @include vp-1024 {
+    font-size: 50px;
+  }
+}
+
+.education__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: $color-default-white;
+  display: flex;
+  // padding: 40px;
+
+}
+
+.education__item {
+  background-color: $color-tolopea;
+  overflow: auto;
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  min-width: min-content;
+  // width: 230px;
+  // max-width: 274px;
+  height: auto;
+  border: 6px dotted $color-deep-magenta;
+}
+
+.education__item h3 {
+  @include font(sans-serif, 600, 25px, ($color-tolopea, 0.8), 30px);
+  display: block;
+  font-style: normal;
+  z-index: 2;
+  bottom: 5px;
+  position: absolute;
+  text-align: center;
+
+  @include vp-768 {
+    font-size: 30px;
+  }
+
+  @include vp-1024 {}
+}
+
+.education__item img {
+  background-color: $color-tolopea;
+  display: block;
+  object-fit: cover;
+  // min-width: 100%;
+  filter: blur(4px);
+  width: 226px;
+  height: 274px;
+  min-width: auto;
+  min-height: auto;
+
+
+  @include vp-768 {
+    width: 100%;
+    height: 100%;
+    min-width: 260px;
+    min-height: 294px;
+  }
+}
+
+.education__content-wrapper {
+  position: relative;
+}
+
+.education__content-button {
+  background-color: transparent;
+  border: none;
+}
+
+.education__content-button svg {
+  stroke: $color-tolopea;
+
+  cursor: pointer;
+  width: 10px;
+  height: 19px;
+
+  @include vp-768 {
+    width: 18px;
+    height: 34px;
+  }
+}
+
+.education__content-button--prev {
+  position: absolute;
+  left: -39px;
+  top: 46%;
+  left: -23;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @include vp-768 {
+    top: 44%;
+    left: -23px;
+  }
+}
+
+.education__content-button--next {
+  position: absolute;
+  right: -39px;
+  top: 46%;
+  right: -23;
+
+  @include vp-768 {
+    top: 44%;
+    right: -23px;
+  }
+}
+
