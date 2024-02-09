@@ -35,9 +35,10 @@
 
 }
 
-.education__item {
+// .education__item,
+.education__item a {
   position: relative;
-  background-color: $color-tolopea;
+  background-color: transparent;
   overflow: auto;
   margin: 0;
   position: relative;
@@ -52,8 +53,13 @@
   border: 6px dotted $color-deep-magenta;
 }
 
-.education__item h3 {
-  @include font(sans-serif, 600, 25px, ($color-tolopea, 0.8), 30px);
+.education h3 {
+  @include font(sans-serif, 600, 25px, $color-default-black, 30px);
+  // display: block;
+  // width: 100%;
+  // height: 35%;
+  padding: 20px 10px;
+  // background-color: rgba($color-deep-magenta, 0.3);
   display: block;
   font-style: normal;
   z-index: 2;
@@ -68,26 +74,6 @@
   @include vp-1024 {}
 }
 
-// .education__item img {
-//   background-color: $color-tolopea;
-//   display: block;
-//   object-fit: cover;
-//   // min-width: 100%;
-//   filter: blur(4px);
-//   width: 226px;
-//   height: 274px;
-//   min-width: auto;
-//   min-height: auto;
-
-
-//   @include vp-768 {
-//     width: 100%;
-//     height: 100%;
-//     min-width: 260px;
-//     min-height: 294px;
-//   }
-// }
-
 .education__item-image {
   // position: absolute;
   width: 100%;
@@ -98,12 +84,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(1px) contrast(0.6);
-  background-color: rgba($color-deep-magenta, 0.3);
+  filter: blur(5px) contrast(0.4);
+  background-color: rgba($color-deep-magenta, 0.6);
 
   &--miet-bak {
     background-position: top;
-    background-image: url("../../img/miet-bak.png");
+    background-image: url("../img/miet-bak.png");
   }
 
   &--miet-mag {
@@ -111,27 +97,27 @@
   }
 
   &--miet-translator {
-    background-image: url("../../img/miet-translator.png");
+    background-image: url("../img/miet-translator.png");
   }
 
   &--miet-translator {
-    background-image: url("../../img/miet-translator.png");
+    background-image: url("../img/miet-translator.png");
   }
 
   &--html-akselerator {
-    background-image: url("../../img/html-akselerator.jpg");
+    background-image: url("../img/html-akselerator.jpg");
   }
 
   &--html-js {
-    background-image: url("../../img/html-js.png");
+    background-image: url("../img/html-js.png");
   }
 
   &--school {
-    background-image: url("../../img/school21.png");
+    background-image: url("../img/school21.png");
   }
 
   &--dxh {
-    background-image: url("../../img/dxh.png");
+    background-image: url("../img/dxh.png");
   }
 }
 
@@ -146,7 +132,6 @@
 
 .education__content-button svg {
   stroke: $color-tolopea;
-
   cursor: pointer;
   width: 10px;
   height: 19px;
@@ -161,7 +146,6 @@
   position: absolute;
   left: -20px;
   top: 46%;
-  // left: -23;
 
   &:hover {
     cursor: pointer;
@@ -177,7 +161,6 @@
   position: absolute;
   right: -20px;
   top: 46%;
-  // right: -23;
 
   @include vp-768 {
     top: 44%;

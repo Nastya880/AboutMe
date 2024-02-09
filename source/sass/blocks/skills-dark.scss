@@ -1,0 +1,14 @@
+body.dark .skills,
+body.dark .skills__container {
+  transition: .5s all ease;
+  background-color: $color-tolopea;
+
+  & h2 {
+    color: $color-default-white;
+  }
+
+  & .skills__item {
+    background-color: rgba($color-deep-magenta, 1);
+    color: $color-default-white;
+  }
+}

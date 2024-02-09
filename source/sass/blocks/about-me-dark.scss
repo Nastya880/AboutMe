@@ -1,18 +1,21 @@
-body.dark .about-me h1 {
-  color: $color-default-white;
-}
-
-body.dark .about-me h2,
-body.dark .about-me a {
-  color: $color-default-white;
-}
-
-body.dark .about-me p {
-  color: $color-default-white;
-}
-
 body.dark .about-me {
+  transition: .5s all ease;
   background-color: $color-tolopea;
-  transition: .3s all ease;
-}
 
+  & h1,
+  & p {
+    color: $color-default-white;
+  }
+
+  & h2 {
+    color: rgba($color-default-white, 0.8);
+  }
+
+  & svg {
+    fill: $color-default-white;
+  }
+
+  & svg:hover {
+    fill: rgba($color-default-white, 0.5);
+  } 
+}

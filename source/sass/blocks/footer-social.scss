@@ -15,6 +15,11 @@
 .footer__social-item svg {
   width: 30px;
   height: 30px;
+  fill: $color-tolopea;
+
+  &:hover {
+    fill: $color-grey-suit;
+  }
 
   @include vp-768 {
     width: 40px;

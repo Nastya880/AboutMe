@@ -24,19 +24,22 @@
             </div>
             <ul class="header__list">
               <li class="header__item">
-                <a href="#about-me" class="header__item-link" aria-label="Обо мне" data-nav-link>Обо мне</a>
+                <a class="header__item-link" href="#about-me" aria-label="Обо мне" data-nav-link>Обо мне</aclass=>
               </li>
               <li class="header__item">
-                <a href="#skills" class="header__item-link" aria-label="Скиллы" data-nav-link>Скиллы</a>
+                <a class="header__item-link" href="#skills" aria-label="Скиллы" data-nav-link>Скиллы</a>
               </li>
               <li class="header__item">
-                <a href="#education" class="header__item-link" aria-label="Образование" data-nav-link>Образование</a>
+                <a class="header__item-link" href="#education" aria-label="Образование" data-nav-link>Образование</a>
               </li>
               <li class="header__item">
-                <a href="#projects" class="header__item-link" aria-label="Пет-проекты" data-nav-link>Пет-проекты</a>
+                <a class="header__item-link" href="#projects" aria-label="Пет-проекты" data-nav-link>Пет-проекты</a>
               </li>
               <li class="header__item">
-                <a href="#experience" class="header__item-link" aria-label="Опыт" data-nav-link>Опыт</a>
+                <a class="header__item-link" href="#experience" aria-label="Опыт" data-nav-link>Опыт</a>
+              </li>
+              <li class="header__item">
+                <a class="header__item-link" href="img/CV.pdf" aria-label="Скачать CV" data-nav-link download>Скачать CV</a>
               </li>
             </ul>
           </nav>
@@ -56,9 +59,15 @@
             <div class="about-me__description">
               <h1>Макеева Анастасия</h1>
               <h2>Джуниор фронтенд-разработчик</h2>
-              <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, officia.</p> -->
               <p>Перешла из тестирования веба в разработку. Студентка 2 курса магистратуры НИУ МИЭТ по направлению программной инженерии. С 2021 года обучаюсь в Школе программирования 21 от Сбер.</p>
               <ul class="about-me__contacts-list">
+                <li class="about-me__contacts-item">
+                  <a href="tel:89032296170" aria-label="89032296170">
+                    <svg width="40" height="40">
+                      <use href="img/sprite.svg#phone"></use>
+                    </svg>
+                  </a>
+                </li>
                 <li class="about-me__contacts-item">
                   <a href="https://github.com/Nastya880" target="_blank" aria-label="github">
                     <svg width="40" height="40">
@@ -81,14 +90,14 @@
                   </a>
                 </li>
                 <li class="about-me__contacts-item">
-                  <a href="" target="_blank" aria-label="vk">
+                  <a href="https://vk.com/id297733194" target="_blank" aria-label="vk">
                     <svg width="40" height="40">
                       <use href="img/sprite.svg#vk"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="about-me__contacts-item">
-                  <a href="" target="_blank" aria-label="whatsapp">
+                  <a href="https://wa.me/89032296170" target="_blank" aria-label="whatsapp">
                     <svg width="40" height="40">
                       <use href="img/sprite.svg#whatsapp"></use>
                     </svg>
@@ -120,12 +129,12 @@
             <div class="skills__soft-wrapper">
               <h2>Софт скиллы</h2>
               <ul class="skills__sft-list skills__list">
-                <li class="skills__soft-item skills__item"><a>Самостоятельность</a></li>
-                <li class="skills__soft-item skills__item"><a>Обучаемость</a></li>
-                <li class="skills__soft-item skills__item"><a>Гибкость</a></li>
-                <li class="skills__soft-item skills__item"><a>Самоорганизация</a></li>
-                <li class="skills__soft-item skills__item"><a>Решительность</a></li>
-                <li class="skills__soft-item skills__item"><a>Коммуникабельность</a></li>
+                <li class="skills__soft-item skills__item">Самостоятельность</li>
+                <li class="skills__soft-item skills__item">Обучаемость</li>
+                <li class="skills__soft-item skills__item">Гибкость</li>
+                <li class="skills__soft-item skills__item">Самоорганизация</li>
+                <li class="skills__soft-item skills__item">Решительность</li>
+                <li class="skills__soft-item skills__item">Коммуникабельность</li>
               </ul>
             </div>
           </div>
@@ -139,38 +148,52 @@
               <div class="education__swiper swiper" data-swiper="education">
                 <ul class="education__list swiper-wrapper">
                   <li class="education__item swiper-slide" tabindex="0">
-                    <div class="education__item-image education__item-image--miet-bak"></div>
-                    <h3>МИЭТ - Бакалавриат - Программная инженерия</h3>
+                    <a href="http://institut-spintex.ru/?ysclid=lsf2eei7vk71644471" target="_blank">
+                      <div class="education__item-image education__item-image--miet-bak"></div>
+                      <h3>МИЭТ - Бакалавриат - Программная инженерия</h3>
+                    </a>
                   </li>
 
                   <li class="education__item swiper-slide" tabindex="0">
-                    <div class="education__item-image education__item-image--miet-mag"></div>
-                    <h3>МИЭТ - Магистратура - Программная инженерия</h3>
+                    <a href="http://institut-spintex.ru/?ysclid=lsf2eei7vk71644471" target="_blank">
+                      <div class="education__item-image education__item-image--miet-mag"></div>
+                      <h3>МИЭТ - Магистратура - Программная инженерия</h3>
+                    </a>
                   </li>
 
                   <li class="education__item swiper-slide" tabindex="0">
-                    <div class="education__item-image education__item-image--miet-translator"></div>
-                    <h3>МИЭТ - Переподготовка - Технический переводчик</h3>
+                    <a href="https://miet.ru/structure/s/3075" target="_blank">
+                      <div class="education__item-image education__item-image--miet-translator"></div>
+                      <h3>МИЭТ - Переподготовка - Технический переводчик</h3>
+                    </a>
                   </li>
 
                   <li class="education__item swiper-slide" tabindex="0">
-                    <div class="education__item-image education__item-image--html-akselerator"></div>
-                    <h3>HTML Academy - Фронтенд разработчик</h3>
+                    <a href="https://htmlacademy.ru/profession/frontender" target="_blank">
+                      <div class="education__item-image education__item-image--html-akselerator"></div>
+                      <h3>HTML Academy - Фронтенд разработчик</h3>
+                    </a>
                   </li>
 
                   <li class="education__item swiper-slide" tabindex="0">
-                    <div class="education__item-image education__item-image--html-js"></div>
-                    <h3>HTML Academy - JS разработчик</h3>
+                    <a href="https://htmlacademy.ru/profession/react" target="_blank">
+                      <div class="education__item-image education__item-image--html-js"></div>
+                      <h3>HTML Academy - JS разработчик</h3>
+                    </a>
                   </li>
 
                   <li class="education__item swiper-slide" tabindex="0">
-                    <div class="education__item-image education__item-image--school"></div>
-                    <h3>Ecole 42 - Школа 21 - разработчик</h3>
+                    <a href="https://21-school.ru" target="_blank">
+                      <div class="education__item-image education__item-image--school"></div>
+                      <h3>Ecole 42 - Школа 21 - разработчик</h3>
+                    </a>
                   </li>
 
                   <li class="education__item swiper-slide" tabindex="0">
-                    <div class="education__item-image education__item-image--dxh"></div>
-                    <h3>ДХШ</h3>
+                    <a href="https://9.paint.mos.ru" target="_blank">
+                      <div class="education__item-image education__item-image--dxh"></div>
+                      <h3>ДХШ</h3>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -320,11 +343,21 @@
                 <li class="footer__nav-item">
                   <a class="footer__nav-item-link" href="#experience" aria-label="Опыт" data-nav-link>Опыт</a>
                 </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-item-link" href="img/CV.pdf" aria-label="Скачать CV" data-nav-link download>Скачать CV</a>
+                </li>
               </ul>
             </nav>
           </div>
           <div class="footer__social">
             <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a href="tel:89032296170" aria-label="89032296170">
+                  <svg width="40" height="40">
+                    <use href="img/sprite.svg#phone"></use>
+                  </svg>
+                </a>
+              </li>
               <li class="footer__social-item">
                 <a href="https://github.com/Nastya880" target="_blank" aria-label="github">
                   <svg width="40" height="40">
@@ -347,14 +380,14 @@
                 </a>
               </li>
               <li class="footer__social-item">
-                <a href="" target="_blank" aria-label="vk">
+                <a href="https://vk.com/id297733194" target="_blank" aria-label="vk">
                   <svg width="40" height="40">
                     <use href="img/sprite.svg#vk"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__social-item">
-                <a href="" target="_blank" aria-label="whatsapp">
+                <a href="https://wa.me/89032296170" target="_blank" aria-label="whatsapp">
                   <svg width="40" height="40">
                     <use href="img/sprite.svg#whatsapp"></use>
                   </svg>

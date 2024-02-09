@@ -35,6 +35,7 @@
   align-self: center;
   border: 6px dashed $color-deep-magenta;
   margin-left: -10px;
+  padding: 10px;
 
   @include vp-768 {
     margin-left: 0;
@@ -46,7 +47,7 @@
 }
 
 .about-me__description h1 {
-  @include font("Minecraft", 600, 35px, $color-tolopea, 60px);
+  @include font(sans-serif, 600, 35px, $color-tolopea, 60px);
   text-align: center;
   letter-spacing: 1px;
 
@@ -102,4 +103,12 @@
 .about-me__contacts-item a {
   text-decoration: none;
   margin-right: 20px;
+}
+
+.about-me svg {
+  fill: $color-tolopea;
+
+  &:hover {
+    fill: $color-grey-suit;
+  }
 }
