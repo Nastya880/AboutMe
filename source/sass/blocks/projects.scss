@@ -37,7 +37,7 @@
   display: flex;
   flex-direction: column;
   justify-content: end;
-  background: var(--light-grey);
+  background: $color-tolopea;
   color: transparent;
   width: 100%;
   height: 300px;
@@ -47,13 +47,45 @@
   border: 6px dotted $color-deep-magenta;
 }
 
-.projects__item img {
+// .projects__item img {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+//   z-index: 1;
+//   filter: blur(2px);
+//   background: rgba(red, 0.5);
+
+
+//   // background-blend-mode: overlay;
+// }
+
+.projects__item-image {
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  z-index: 1;
-  filter: blur(4px);
+  background-blend-mode: multiply;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(1px) contrast(0.6);
+  background-color: rgba($color-deep-magenta, 0.3);
+
+  &--smart-device {
+    background-image: url("../../img/smart-device.png");
+  }
+
+  &--supergym {
+    background-image: url("../../img/supergym.png");
+  }
+
+  &--fin-manager {
+    background-image: url("../../img/fin-manager.png");
+  }
+
+  &--cruises {
+    background-image: url("../../img/cruises.png");
+  }
 }
 
 .projects__item-overlay {

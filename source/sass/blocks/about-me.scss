@@ -16,7 +16,7 @@
 }
 
 .about-me img {
-  width: 100%;
+  width: calc(100% - 30px);
   border-radius: 50%;
   height: auto;
 
@@ -34,6 +34,11 @@
   // max-width: 50%;
   align-self: center;
   border: 6px dashed $color-deep-magenta;
+  margin-left: -10px;
+
+  @include vp-768 {
+    margin-left: 0;
+  }
 
   @include vp-1440 {
     text-align: center;

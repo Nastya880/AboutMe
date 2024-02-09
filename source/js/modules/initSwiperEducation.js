@@ -16,6 +16,12 @@ const initSwiperEducation = () => {
         spaceBetween: 40,
       },
 
+      1024: {
+        allowTouchMove: true,
+        slidesPerView: 3,
+        spaceBetween: 22,
+      },
+
       768: {
         allowTouchMove: true,
         slidesPerView: 2,

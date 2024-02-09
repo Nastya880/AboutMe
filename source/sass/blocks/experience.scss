@@ -72,3 +72,9 @@
 .experience__item {
   margin: 50px 0;
 }
+
+.experience__item a:hover {
+  & h3 {
+    color: $color-grey-suit;
+  }
+}

@@ -1,6 +1,10 @@
 .education__container {
   padding: 40px 20px;
   background-color: rgba($color-default-white, 0.2);
+
+  @include vp-768 {
+    padding: 40px;
+  }
 }
 
 .education h2 {
@@ -8,6 +12,9 @@
   text-align: center;
   letter-spacing: 1px;
   margin-bottom: 20px;
+  word-wrap: wrap;
+  word-wrap: break-word;
+  hyphens: auto;
 
   @include vp-768 {
     font-size: 45px;
@@ -29,13 +36,16 @@
 }
 
 .education__item {
+  position: relative;
   background-color: $color-tolopea;
   overflow: auto;
   margin: 0;
   position: relative;
   display: flex;
   flex-direction: column-reverse;
-  min-width: min-content;
+  justify-content: center;
+  align-items: center;
+  // min-width: min-content;
   // width: 230px;
   // max-width: 274px;
   height: auto;
@@ -58,23 +68,70 @@
   @include vp-1024 {}
 }
 
-.education__item img {
-  background-color: $color-tolopea;
-  display: block;
-  object-fit: cover;
-  // min-width: 100%;
-  filter: blur(4px);
-  width: 226px;
-  height: 274px;
-  min-width: auto;
-  min-height: auto;
+// .education__item img {
+//   background-color: $color-tolopea;
+//   display: block;
+//   object-fit: cover;
+//   // min-width: 100%;
+//   filter: blur(4px);
+//   width: 226px;
+//   height: 274px;
+//   min-width: auto;
+//   min-height: auto;
 
 
-  @include vp-768 {
-    width: 100%;
-    height: 100%;
-    min-width: 260px;
-    min-height: 294px;
+//   @include vp-768 {
+//     width: 100%;
+//     height: 100%;
+//     min-width: 260px;
+//     min-height: 294px;
+//   }
+// }
+
+.education__item-image {
+  // position: absolute;
+  width: 100%;
+  height: 100%;
+  min-width: 260px;
+  min-height: 294px;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(1px) contrast(0.6);
+  background-color: rgba($color-deep-magenta, 0.3);
+
+  &--miet-bak {
+    background-position: top;
+    background-image: url("../../img/miet-bak.png");
+  }
+
+  &--miet-mag {
+    background-color: $color-tolopea;
+  }
+
+  &--miet-translator {
+    background-image: url("../../img/miet-translator.png");
+  }
+
+  &--miet-translator {
+    background-image: url("../../img/miet-translator.png");
+  }
+
+  &--html-akselerator {
+    background-image: url("../../img/html-akselerator.jpg");
+  }
+
+  &--html-js {
+    background-image: url("../../img/html-js.png");
+  }
+
+  &--school {
+    background-image: url("../../img/school21.png");
+  }
+
+  &--dxh {
+    background-image: url("../../img/dxh.png");
   }
 }
 
@@ -102,9 +159,9 @@
 
 .education__content-button--prev {
   position: absolute;
-  left: -39px;
+  left: -20px;
   top: 46%;
-  left: -23;
+  // left: -23;
 
   &:hover {
     cursor: pointer;
@@ -112,19 +169,18 @@
 
   @include vp-768 {
     top: 44%;
-    left: -23px;
+    left: -33px;
   }
 }
 
 .education__content-button--next {
   position: absolute;
-  right: -39px;
+  right: -20px;
   top: 46%;
-  right: -23;
+  // right: -23;
 
   @include vp-768 {
     top: 44%;
-    right: -23px;
+    right: -33px;
   }
 }
-
