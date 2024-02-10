@@ -8,7 +8,6 @@
 
   @include vp-1024 {
     grid-template-columns: 1fr 1fr;
-    // justify-items: center;
   }
 }
 
@@ -28,7 +27,6 @@
 .skills__list {
   list-style: none;
   display: flex;
-  // flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
