@@ -2201,6 +2201,7 @@ body.dark .education .education__content-button svg {
   -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
   border: 6px dotted #D803C6;
+  overflow: auto;
 }
 
 .projects__item-image {
@@ -2251,6 +2252,7 @@ body.dark .education .education__content-button svg {
   z-index: 2;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  overflow: auto;
 }
 @media (min-width: 768px) {
   .projects__item-overlay {
@@ -2263,9 +2265,10 @@ body.dark .education .education__content-button svg {
   max-width: 70%;
   margin: 20px;
   position: absolute;
-  left: -70%;
+  left: -90%;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  overflow: auto;
 }
 
 .projects__item:hover .projects__item-overlay {
@@ -2273,6 +2276,7 @@ body.dark .education .education__content-button svg {
   cursor: pointer;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  overflow: auto;
 }
 
 .projects__item:hover .projects__item-description {
@@ -2280,6 +2284,7 @@ body.dark .education .education__content-button svg {
   cursor: pointer;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  overflow: auto;
 }
 
 .projects__item-description p {
@@ -2287,15 +2292,16 @@ body.dark .education .education__content-button svg {
   font-size: 19px;
   font-family: sans-serif;
   color: #170D3F, 0.8;
-  line-height: 25px;
+  line-height: 20px;
   letter-spacing: 1px;
   text-decoration: none;
   margin-bottom: 10px;
   margin-top: 10px;
+  overflow: auto;
 }
 @media (min-width: 768px) {
   .projects__item-description p {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 28px;
   }
 }
